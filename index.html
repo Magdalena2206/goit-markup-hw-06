@@ -295,6 +295,21 @@
 
     <div class="modal is-hidden" data-modal>
         <div class="window" data-modal>
+            <form name="form" autocomplete="on" novalidate>
+                <p>Zostaw swoje dane w formularzu poniżej</p>
+                <label class="info">Imię<svg><use href="./images/icons.svg#icon-Vector" width="12px" height="12px"></use></svg><input type="text" name="username"/>
+                  </label>
+                  <label class="info">Telefon
+                    <input type="tel" name="phonenumber"/></label>
+                  <label class="info">Email<input type="email" name="email"/></label>
+                  <label class="com">Komentarz<input type="text" name="comment" placeholder="Wprowadź tekst"/></label>
+                  
+                  <label class="check">
+                    <input type="checkbox" name="statue" />
+                    Oświadczam iż akceptuję <em> Regulamin </em> i <em> Politykę Prywatności.</em>
+                  </label>
+                  <button type="submit">Wyślij</button>
+            </form>
             <button type="button" data-modal-close>X</button>
         </div>
         
