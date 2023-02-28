@@ -288,7 +288,9 @@ margin-bottom: 4px;
   margin-left: 10px;
   transform: translateY(-80%);
 }
-
+.icon:focus{
+--color4:var(--blue);
+}
 .com{
   display: flex;
   flex-direction: column;
@@ -317,7 +319,9 @@ padding-left: 16px;
 padding-top: 12px;
 color: rgba(117, 117, 117, 0.5);
 }
-
+textarea:focus{
+  outline: 1px solid var(--blue);
+}
 .accept{
   display: flex;
   flex-direction:row;
@@ -517,12 +521,12 @@ margin-top: 20px;
   margin-right: 20px;
 }
 
-.quarter svg {
+.icon2 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 8px;
 }
-.quarter svg:hover {
+.icon2:hover {
   --color1: var(--white);
   background-color: var(--blue);
   border: 1px var(--blue);
