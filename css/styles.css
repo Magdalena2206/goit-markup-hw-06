@@ -261,11 +261,15 @@ letter-spacing: 0.01em;
 color: var(--grey);
 }
 
-.info input{
+.color{
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 35px;
+}
+.color:focus{
+  
+  outline: 1px solid var(--blue);
 }
 .icon{
   width: 15px;
@@ -284,9 +288,7 @@ margin-bottom: 4px;
   margin-left: 10px;
   transform: translateY(-80%);
 }
-.info input:focus-within{
-  border-color: #2196f3;
-}
+
 .com{
   display: flex;
   flex-direction: column;
@@ -315,6 +317,7 @@ padding-left: 16px;
 padding-top: 12px;
 color: rgba(117, 117, 117, 0.5);
 }
+
 .accept{
   display: flex;
   flex-direction:row;
@@ -334,10 +337,16 @@ color: rgba(117, 117, 117, 0.5);
 }
 .check{
   margin-right: 9px;
+  position: relative;
 }
-.accept:checked + .check{
-  background-color: var(--blue);
-  color: var(--blue);
+.icon-1{
+  width: 8px;
+  height: 8px;
+}
+.check > .icon-1{
+position: absolute;
+top: 0;
+right: 0;
 }
 
 .send{
