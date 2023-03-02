@@ -288,7 +288,7 @@ margin-bottom: 4px;
   margin-left: 10px;
   transform: translateY(-80%);
 }
-.icon:focus{
+.info >.icon:focus{
 --color4:var(--blue);
 }
 .com{
@@ -325,25 +325,32 @@ textarea:focus{
 
 .accept {
   position: relative;
-  top: 0;
+  top: -15;
   left: 0;
-  margin-left: 54px;
+  margin-left: 45px;
+  
+}
+.accept p{
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--grey);
+  position: relative;
+  top:-18px;
+  left: 83px;
 }
 .blue-1{
   color: var(--blue);
   text-decoration: underline;
 }
 .check{
-  
+  position: relative;
   width: 15px;
   height: 15px;
-  margin-top: 19px;
+  top: 19px;
   opacity: 0;
+  left:59px;
 }
 .accept::before{
   content: "";
@@ -353,7 +360,7 @@ textarea:focus{
   border: solid 1px var(--black);
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 20px;
 }
 .accept::after{
   content: "";
@@ -365,7 +372,7 @@ textarea:focus{
     transform: rotate(-45deg);
     position: absolute;
     left: 4px;
-    top: 7px;
+    top: 24px;
 }
 .check + .accept::after{
   content: none;
@@ -389,7 +396,7 @@ border-radius: 4px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 20px;
+margin-top: 10px;
 
 }
 
