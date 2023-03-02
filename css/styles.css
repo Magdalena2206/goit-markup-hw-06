@@ -266,6 +266,8 @@ color: var(--grey);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 35px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .color:focus{
   
@@ -274,6 +276,8 @@ color: var(--grey);
 .icon{
   width: 15px;
   height: 13px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info p{
   font-size: 12px;
@@ -318,6 +322,8 @@ resize: none;
 padding-left: 16px;
 padding-top: 12px;
 color: rgba(117, 117, 117, 0.5);
+transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea:focus{
   outline: 1px solid var(--blue);
@@ -346,11 +352,13 @@ textarea:focus{
 }
 .check{
   position: relative;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   top: 19px;
   opacity: 0;
   left:59px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accept::before{
   content: "";
@@ -379,7 +387,7 @@ textarea:focus{
 }
 .check:checked + .accept::after{
   content: "";
-  color: #ffffff;
+  color: var(--white);
 }
 
 .check:focus + .accept::before{
