@@ -367,8 +367,15 @@ textarea:focus{
     left: 4px;
     top: 7px;
 }
+.check + .accept::after{
+  content: none;
+}
+.check:checked + .accept::after{
+  content: "";
+}
 
-.check:focus{
+.check:focus + .accept::before{
+outline: var(--blue) auto 5px;
   background: var(--blue);
 }
 .send{
