@@ -288,8 +288,8 @@ margin-bottom: 4px;
   margin-left: 10px;
   transform: translateY(-80%);
 }
-.info >.icon:focus{
---color4:var(--blue);
+.icon:focus{
+  --color4:var(--blue);
 }
 .com{
   display: flex;
@@ -379,11 +379,13 @@ textarea:focus{
 }
 .check:checked + .accept::after{
   content: "";
+  color: #ffffff;
 }
 
 .check:focus + .accept::before{
 outline: var(--blue) auto 5px;
   background: var(--blue);
+  
 }
 .send{
   
