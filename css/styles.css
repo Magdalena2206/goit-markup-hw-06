@@ -322,13 +322,12 @@ color: rgba(117, 117, 117, 0.5);
 textarea:focus{
   outline: 1px solid var(--blue);
 }
-.accept{
-  display: flex;
-  flex-direction:row;
-  margin-left: 54px;
+
+.accept {
   position: relative;
-}
-.accept p{
+  top: 0;
+  left: 0;
+  margin-left: 54px;
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -340,24 +339,35 @@ textarea:focus{
   text-decoration: underline;
 }
 .check{
-  margin-right: 8px;
+  
   width: 15px;
   height: 15px;
-  appearance: none;
-  border: 1px solid var(black);
   margin-top: 19px;
+  opacity: 0;
 }
-.icon1{
-  width: 12px;
-  height: 9px;
-  padding-left: 2px;
+.accept::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: solid 1px var(--black);
+  position: absolute;
+  left: 0;
+  top: 3px;
 }
-.accept > .icon1{
-position: absolute;
-left:0;
-top:50%;
-transform: translateY(-50%);
+.accept::after{
+  content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 4px;
+    top: 7px;
 }
+
 .check:focus{
   background: var(--blue);
 }
@@ -527,7 +537,7 @@ margin-top: 20px;
   padding-left: 8px;
 }
 .icon2:hover {
-  --color1: var(--white);
+  --color2: var(--white);
   background-color: var(--blue);
   border: 1px var(--blue);
   cursor: pointer;
@@ -572,7 +582,7 @@ margin-top: 20px;
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
-  --color1: var(--blue);
+  --color2: var(--blue);
 }
 
 .second {
