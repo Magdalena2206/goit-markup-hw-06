@@ -292,7 +292,7 @@ margin-bottom: 4px;
   margin-left: 10px;
   transform: translateY(-80%);
 }
-.icon:focus{
+.color:focus + .icon{
   --color4:var(--blue);
 }
 .com{
@@ -359,6 +359,7 @@ textarea:focus{
   left:59px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index:10;
 }
 .accept::before{
   content: "";
