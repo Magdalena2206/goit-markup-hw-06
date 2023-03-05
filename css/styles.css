@@ -280,7 +280,7 @@ margin-bottom: 12px;
 
 .info > .icon{
   position: absolute;
-  top: 70%;
+  top: 80%;
   margin-left: 10px;
   transform: translateY(-80%);
 }
