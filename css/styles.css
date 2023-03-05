@@ -153,8 +153,7 @@ p {
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(47, 48, 58, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+    rgba(0, 212, 255, 1) 100%);
   background-image: url(./people.jpg);
   display: flex;
   flex-direction: column;
@@ -277,7 +276,7 @@ color: var(--grey);
   width: 15px;
   height: 13px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .info p{
   font-size: 12px;
@@ -293,7 +292,7 @@ margin-bottom: 4px;
   transform: translateY(-80%);
 }
 .color:focus + .icon{
-  --color4:var(--blue);
+  fill:var(--blue);
 }
 .com{
   display: flex;
@@ -856,7 +855,6 @@ text-transform: uppercase;
 color: var(--white);
 padding-top:72px;
 padding-left: 78px;
-padding-bottom: ;
 }
 .part3 input{
  padding: 15px;
